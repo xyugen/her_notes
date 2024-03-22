@@ -7,12 +7,25 @@
     android:background="@color/background"
     android:id="@+id/add_note">
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/pink_circle"
+        android:foreground="@drawable/chevron_left_icon"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/btn_back">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,5 +62,41 @@
                 tools:targetApi="p" />
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/text"
+            android:textFontWeight="600"
+            android:text="B"
+            android:background="@color/transparent"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/text"
+            android:textFontWeight="400"
+            android:textStyle="italic"
+            android:text="I"
+            android:background="@color/transparent" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:background="@color/transparent"
+            android:foregroundGravity="center"
+            android:foreground="@drawable/image_icon" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
