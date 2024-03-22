@@ -25,6 +25,10 @@
         <activity
             android:name=".NoteListActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".AddNoteActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
