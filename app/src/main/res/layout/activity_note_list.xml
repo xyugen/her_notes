@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:id="@+id/note_list">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +14,6 @@
         android:fontFamily="@font/pompiere_regular"
         android:text="@string/my_nl_notes"
         android:textSize="64sp"
-        android:id="@+id/note_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

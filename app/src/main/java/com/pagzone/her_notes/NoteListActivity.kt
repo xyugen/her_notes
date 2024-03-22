@@ -13,8 +13,13 @@ import androidx.core.view.WindowInsetsCompat
 class NoteListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
+        enableEdgeToEdge()
         setContentView(R.layout.activity_note_list)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.note_list)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
         val btnMenu: Button = findViewById(R.id.menu_button)
 
         // Set click listener using lambda expression
