@@ -1,7 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.HerNotes" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="background">@color/background</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="android:textColor">@color/text</item>
     </style>
+
+    <color name="background">#B14772</color>
+    <color name="primary">#EA9AB2</color>
+    <color name="secondary">#975980</color>
+    <color name="accent">#B3DEE2</color>
+    <color name="text">#EAF2D7</color>
 </resources>

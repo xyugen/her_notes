@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.HerNotes"
     android:background="@color/background"
     android:id="@+id/add_note">
 
@@ -40,6 +41,7 @@
                 android:padding="5dp"
                 android:autofillHints="note title"
                 android:fontFamily="@font/pompiere_regular"
+                android:textColor="@color/text"
                 android:inputType="textMultiLine"
                 android:minLines="1"
                 android:textSize="52sp"
@@ -52,6 +54,7 @@
                 android:layout_marginTop="15dp"
                 android:padding="5dp"
                 android:fontFamily="@font/poppins"
+                android:textColor="@color/text"
                 android:textFontWeight="400"
                 android:background="@color/transparent"
                 android:autofillHints="note title"
@@ -70,19 +73,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+
         <Button
             android:layout_width="45dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:padding="0dp"
+            android:layout_weight="1"
             android:fontFamily="@font/poppins"
             android:textColor="@color/text"
             android:textFontWeight="600"
             android:text="B"
             android:background="@color/transparent"/>
+
         <Button
             android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:padding="0dp"
+            android:layout_weight="1"
             android:fontFamily="@font/poppins"
             android:textColor="@color/text"
             android:textFontWeight="400"
@@ -94,9 +101,21 @@
             android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:padding="0dp"
+            android:layout_weight="1"
             android:background="@color/transparent"
             android:foregroundGravity="center"
             android:foreground="@drawable/image_icon" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/gray"
+            android:textFontWeight="400"
+            android:text="X"
+            android:background="@color/transparent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
