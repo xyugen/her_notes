@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 class NoteListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        //enableEdgeToEdge()
         setContentView(R.layout.activity_note_list)
     }
 }
